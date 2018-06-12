@@ -1,4 +1,20 @@
-# Example:
+User
+  name: text
+  email: text
+  password_digest: text
+
+Spectacle
+  brand: text
+  summary: text
+  price: integer
+  photo_url: text
+  brand_id: integer
+
+Designer
+  name: text
+  
+  
+  # Example:
 #
 # Book
 #   title: text

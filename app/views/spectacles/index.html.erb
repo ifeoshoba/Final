@@ -1,0 +1,20 @@
+<h1>Spectacles</h1>
+
+<% if session["user_id"] != nil %>
+
+  <p>
+    <a class="float-right btn btn-primary" href="/spectacles/new">Add a Spectacle</a>
+  <p>
+
+<% end %>
+
+<ul>
+  <% for spectacle in Spectacle.all %>
+    <li>
+      <a href="/spectacles/<%= spectacle.id %>">
+          <%= spectacle.brand %>
+      </a>
+      <a href="/spectacles/<%= spectacle.id %>/delete">[Delete]</a>
+    </li>
+  <% end %>
+</ul>
