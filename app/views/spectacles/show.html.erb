@@ -11,7 +11,7 @@
     <% designer = Designer.find_by(id: b.designer_id) %>
 
     <% if designer != nil %>
-        <p>Written by <a href="/authors/<%= designer.id %>"><%= designer.name %></p>
+        <p>Designed by <a href="/designers/<%= designer.id %>"><%= designer.name %></p>
     <% else %>
         <p>Designer :(</p>
     <% end %>

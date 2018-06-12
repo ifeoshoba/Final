@@ -24,7 +24,7 @@ class SpectaclesController < ApplicationController
   def create
         Spectacle.create brand: params["brand"],
                 price: (params["price"].to_f * 100).to_i,
-                brand_id: params["author_id"],
+                brand_id: params["brand_id"],
                 summary: params["summary"],
                 photo_url: params["photo_url"]
 
