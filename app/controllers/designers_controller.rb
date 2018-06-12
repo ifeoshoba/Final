@@ -1,10 +1,16 @@
 class DesignersController < ApplicationController
 
   def index
+    
+      
 
   end
 
   def show
+    <% for designer in Designer.all %>
+          <a href="/designers/<%= designer.id %>">
+          <%= designer.name %>
+      </a>
 
   end
 
@@ -18,7 +24,7 @@ class DesignersController < ApplicationController
 
   def create
       Designer.create name: params["name"],
-      redirect_to "/", 
+      redirect_to "/", notice: 
   end
 
   def edit
