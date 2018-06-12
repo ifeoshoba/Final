@@ -24,5 +24,13 @@ Rails.application.routes.draw do
   get "/users/:id/edit" => "users#edit"
   get "/users/:id/update" => "users#update"
   
+  get "/designers" => "designers#index"
+  get "/designers/new" => "designers#new"
+  get "/designers/create" => "designers#create"
+  get "/designers/:id/delete" => "designers#destroy"
+  get "/designers/:id" => "designers#show"
+  get "/designers/:id/edit" => "designers#edit"
+  get "/designers/:id/update" => "designers#update"
+  
   
 end

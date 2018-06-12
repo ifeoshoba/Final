@@ -9,9 +9,9 @@
 <div class="row">
   <form action="/spectacles/<%= spectacle.id %>/update" class="col-sm-6">
 
-    <p class="form-group">Brand: <input value="<%= book.title %>" autofocus class="form-control" name="brand"></p>
+    <p class="form-group">Brand: <input value="<%= spectacle.brand %>" autofocus class="form-control" name="brand"></p>
 
-    <p class="form-group">Price: <input value="<%= book.price.to_f / 100.0 %>" class="form-control" name="price"></p>
+    <p class="form-group">Price: <input value="<%= spectacle.price.to_f / 100.0 %>" class="form-control" name="price"></p>
 
     <p class="form-group">Brand:
     <select name="brand_id">

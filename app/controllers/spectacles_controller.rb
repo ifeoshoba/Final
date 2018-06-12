@@ -40,9 +40,9 @@ class SpectaclesController < ApplicationController
   def update
         spectacle = Spectacle.find_by(id: params["id"])
 
-    spectacle.update title: params["title"],
+    spectacle.update brand: params["brand"],
                 summary: params["summary"],
-                author_id: params["author_id"],
+                brand_id: params["brand_id"],
                 photo_url: params["photo_url"],
                 price: params["price"].to_f * 100
 

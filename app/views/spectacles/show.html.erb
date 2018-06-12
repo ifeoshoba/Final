@@ -8,7 +8,7 @@
 <div class="row">
   <div class="col-sm-3 d-flex flex-column align-items-center">
 
-    <% designer = Designer.find_by(id: b.designer_id) %>
+    <% designer = Designer.find_by(id: b.brand_id) %>
 
     <% if designer != nil %>
         <p>Designed by <a href="/designers/<%= designer.id %>"><%= designer.name %></p>
